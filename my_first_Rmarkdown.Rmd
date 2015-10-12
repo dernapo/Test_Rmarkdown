@@ -1,0 +1,33 @@
+My first markdown document
+==========================
+
+This is my first markdown document
+
+Here some data:
+
+````{r}
+library(datasets)
+data(airquality)
+summary(airquality)
+
+```
+
+Here a plot:
+
+```{r}
+pairs(airquality)
+```
+
+Here a regresion model of ozone on wind, solar radiation and temperature:
+
+```{r}
+library(stats)
+fit<-lm(Ozone ~ Wind + Solar.R + Temp, data=airquality)
+summary(fit)
+```
+
+done!
+
+
+
+
